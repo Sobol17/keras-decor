@@ -13,4 +13,21 @@ $(document).ready(function () {
 			prevEl: '.main-swiper-navigation__button--prev',
 		},
 	})
+
+	// Открытие модалки
+	$('[data-modal-target]').on('click', function () {
+		const targetModal = $(this).data('modal-target')
+		$(`.modal-wrapper[data-modal="${targetModal}"]`).removeClass('hide')
+	})
+
+	// Закрытие модалки
+	$('.modal-wrapper').on('click', '.modal__close', function () {
+		$(this).closest('.modal-wrapper').addClass('hide')
+	})
+
+	$('.modal-wrapper').on('click', function (e) {
+		if ($(e.target).hasClass('modal-wrapper')) {
+			$(this).addClass('hide')
+		}
+	})
 })

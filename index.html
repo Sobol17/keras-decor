@@ -72,7 +72,7 @@
 								<img class="main-slide__img" src="assets/bg1.png" alt="" />
 								<h2 class="main-slide__title">Коллекция “Элегантность”</h2>
 								<p class="main-slide__text">
-									Добавьте шарм вашему интерьеру с нашим новыми обоямии
+									Добавьте шарм вашему интерьеру с нашим новыми обоями <br />
 									напольными покрытиями из коллекции «Элегантность».
 								</p>
 								<button class="main-slide__button">Перейти в каталог</button>
@@ -455,7 +455,7 @@
 							>
 						</div>
 
-						<button class="request-block__button">
+						<button class="my-button" data-modal-target="consult-modal">
 							Записаться на консультацию
 						</button>
 					</div>
@@ -570,9 +570,7 @@
 								placeholder="+7"
 							/>
 						</div>
-						<button class="request-block__button">
-							Записаться на консультацию
-						</button>
+						<button class="my-button">Записаться на консультацию</button>
 						<div class="main-form__note">
 							Оставьте заявку на бесплатный расчет стоимости материалов
 						</div>
@@ -746,6 +744,43 @@
 					<img src="assets/logo-big.svg" alt="" />
 				</div>
 			</footer>
+
+			<div class="modal-wrapper hide" data-modal="consult-modal">
+				<div class="modal">
+					<div class="modal__close">
+						<img src="assets/close-fill.svg" alt="" />
+					</div>
+					<img class="modal__img" src="assets/modal-img.jpg" alt="" />
+					<h2 class="modal__title">Оставьте заявку на консультцию</h2>
+					<p class="modal__subtitle">Оставьте заявку на консультцию</p>
+					<div class="modal__inputs">
+						<input
+							class="input input--gray"
+							type="text"
+							name="name"
+							placeholder="Имя"
+						/>
+						<input
+							class="input input--gray"
+							type="text"
+							name="name"
+							placeholder="Имя"
+						/>
+					</div>
+					<input
+						class="input input--gray"
+						type="text"
+						name="name"
+						placeholder="Комментарий"
+					/>
+					<div class="modal__button-wrapper">
+						<button class="my-button modal__button">Отправить</button>
+					</div>
+					<p class="modal__note">
+						Нажимая на кнопку, вы соглашаетесь с Политикой конфиденциальности
+					</p>
+				</div>
+			</div>
 		</div>
 
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
