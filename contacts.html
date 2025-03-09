@@ -13,143 +13,276 @@
 		<title>Keras Decor</title>
 	</head>
 	<body>
-		<header class="header">
-			<a href="/">
-				<img class="header-logo" src="assets/logo.svg" alt="" />
-			</a>
-			<nav class="header-nav">
-				<button class="header-nav__button">
-					<i>
-						<svg
-							width="34"
-							height="11"
-							viewBox="0 0 34 11"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M27.333 9.44189H6.33301"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
+		<div class="container">
+			<header class="header">
+				<a href="/">
+					<img class="header-logo" src="assets/logo.svg" alt="" />
+				</a>
+				<nav class="header-nav">
+					<button class="header-nav__button">
+						<i>
+							<svg
+								width="34"
+								height="11"
+								viewBox="0 0 34 11"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M27.333 9.44189H6.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M32.333 1.55811H1.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</i>
+						<span>Каталог</span>
+					</button>
+					<a class="header-nav__link" href="/">О нас</a>
+					<a class="header-nav__link" href="/">Доставка и оплата</a>
+					<a class="header-nav__link" href="/">Блог</a>
+					<a class="header-nav__link" href="/">Дизайнерам</a>
+					<a class="header-nav__link" href="/">Контакты</a>
+				</nav>
+				<div class="header-controls">
+					<a class="header-nav__link header-phone" href="mailto:83952333940"
+						>+7 (3952) 33-39-40</a
+					>
+					<div class="header-control">
+						<img src="assets/cart-icon.svg" alt="" />
+					</div>
+
+					<div class="header-control">
+						<img src="assets/like-icon.svg" alt="" />
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="top-banner contacts-breadcrumbs">
+					<ul class="catalog-breadcrumbs">
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Главная</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Контакты</a>
+						</li>
+					</ul>
+					<h1 class="top-banner__title">Контакты</h1>
+				</section>
+
+				<section class="contacts">
+					<div class="contacts-container">
+						<div class="contacts-col">
+							<img
+								class="contacts-icon"
+								src="assets/contacts/address.svg"
+								alt=""
 							/>
-							<path
-								d="M32.333 1.55811H1.33301"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
+							<p class="contacts-title">
+								​Иркутск, Красноказачья, 781 этаж; <br />Октябрьский район, вход
+								со двора
+							</p>
+							<p class="contacts-text">
+								Приходите у нам в студию!  Работаем с 8 -20 каждый день
+							</p>
+							<a href="/" class="contacts-link">Маршрут на яндекс карте</a>
+						</div>
+						<div class="contacts-col">
+							<img
+								class="contacts-icon"
+								src="assets/contacts/phone.svg"
+								alt=""
 							/>
-						</svg>
-					</i>
-					<span>Каталог</span>
-				</button>
-				<a class="header-nav__link" href="/">О нас</a>
-				<a class="header-nav__link" href="/">Доставка и оплата</a>
-				<a class="header-nav__link" href="/">Блог</a>
-				<a class="header-nav__link" href="/">Дизайнерам</a>
-				<a class="header-nav__link" href="/">Контакты</a>
-			</nav>
-			<div class="header-controls">
-				<a class="header-nav__link header-phone" href="mailto:83952333940"
-					>+7 (3952) 33-39-40</a
-				>
-				<div class="header-control">
-					<img src="assets/cart-icon.svg" alt="" />
+							<p class="contacts-title">+7 965 424 40 61</p>
+							<p class="contacts-text">
+								Есть вопросы? Мы готовы вам помочь! Телефон для консультации
+							</p>
+							<a href="tel:89654244061" class="contacts-link"
+								>Бесплатный звонок</a
+							>
+						</div>
+						<div class="contacts-col">
+							<img
+								class="contacts-icon"
+								src="assets/contacts/email.svg"
+								alt=""
+							/>
+							<p class="contacts-title">info@karasdecore.com</p>
+							<p class="contacts-text">
+								Получите быстрый ответ на свой <br />
+								вопрос, написав нам на почту
+							</p>
+							<a href="mailto:info@karasdecore.com" class="contacts-link"
+								>Написать</a
+							>
+						</div>
+						<div class="contacts-col">
+							<a href="/">
+								<img
+									class="contacts-icon"
+									src="assets/contacts/tg.svg"
+									alt=""
+								/>
+							</a>
+							<a href="/">
+								<img
+									class="contacts-icon"
+									src="assets/contacts/youtube.svg"
+									alt=""
+								/>
+							</a>
+							<a href="/"
+								><img class="contacts-icon" src="assets/contacts/vk.svg" alt=""
+							/></a>
+							<p class="contacts-title">
+								Присоединяйтесь к нашим <br />
+								социальным сетям
+							</p>
+							<p class="contacts-text">
+								Получите быстрый ответ на свой вопрос, обратившись в онлайн чат
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<div class="contacts-flex">
+					<div class="map">
+						<iframe
+							src="https://yandex.ru/map-widget/v1/?um=constructor%3A54f52c6a90d82eef43769e1cf4d724eb9b25b08805046e7479f0cb4b8088ee9b&amp;source=constructor"
+							width="100%"
+							height="630"
+							frameborder="0"
+						></iframe>
+					</div>
+					<div class="form-section payment-form-section contacts-form-section">
+						<div class="form-wrapper">
+							<form class="main-form" action="/">
+								<div class="main-form__top">Заполните форму</div>
+								<h2 class="main-form__title">
+									Есть вопросы или <br />
+									нужна консультация?
+								</h2>
+								<p class="main-form__text">
+									Наш специалист с радостью поможет вам в подборе <br />
+									материалов и ответит на все возникшие вопросы
+								</p>
+								<div class="main-form__inputs">
+									<input
+										class="input input--gray"
+										type="text"
+										name="name"
+										placeholder="Имя"
+									/>
+									<input
+										class="input input--gray"
+										type="text"
+										name="phone"
+										placeholder="+7"
+									/>
+								</div>
+								<button class="my-button">Записаться на консультацию</button>
+								<div class="main-form__note">
+									Оставьте заявку на бесплатный расчет стоимости материалов
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="flex-col">
+					<div class="footer-logo">
+						<img src="assets/logo.svg" />
+					</div>
+					<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
+					<div class="footer-phone__note">Заказать звонок</div>
+					<div class="footer-address">
+						г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
+						Рабочие дни : пн. — вс. с 10.00 до 20.00
+					</div>
+					<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
+						>KerasDecore@mail.ru</a
+					>
+					<div class="footer-links">
+						<img src="assets/telegramm.svg" alt="" />
+						<img src="assets/vk.svg" alt="" />
+					</div>
 				</div>
 
-				<div class="header-control">
-					<img src="assets/like-icon.svg" alt="" />
+				<div class="flex-col">
+					<div class="footer-title">Категории</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый паркет</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Плинтус</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Подложка</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Клей</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</header>
 
-		<main></main>
-
-		<footer class="footer">
-			<div class="flex-col">
-				<div class="footer-logo">
-					<img src="assets/logo.svg" />
+				<div class="flex-col">
+					<div class="footer-title">Информация</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Дизайнерам</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Контакты</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">О компании</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Доставка и оплата </a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Блог</a>
+						</li>
+					</ul>
 				</div>
-				<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
-				<div class="footer-phone__note">Заказать звонок</div>
-				<div class="footer-address">
-					г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
-					Рабочие дни : пн. — вс. с 10.00 до 20.00
+
+				<div class="flex-col">
+					<div class="footer-title">Магазин</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Каталог</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Политика конфеденциальности</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Карта сайта </a>
+						</li>
+					</ul>
+
+					<p class="footer-copyright">© Karas Decore, 2024-2025</p>
 				</div>
-				<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
-					>KerasDecore@mail.ru</a
-				>
-				<div class="footer-links">
-					<img src="assets/telegramm.svg" alt="" />
-					<img src="assets/vk.svg" alt="" />
+
+				<div class="footer-logo--big">
+					<img src="assets/logo-big.svg" alt="" />
 				</div>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Категории</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Кварцвиниловый паркет</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Плинтус</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Подложка</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Клей</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Информация</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Дизайнерам</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Контакты</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">О компании</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Доставка и оплата </a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Блог</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Магазин</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Каталог</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Политика конфеденциальности</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Пользовательское соглашение</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Карта сайта </a>
-					</li>
-				</ul>
-
-				<p class="footer-copyright">© Karas Decore, 2024-2025</p>
-			</div>
-
-			<div class="footer-logo--big">
-				<img src="assets/logo-big.svg" alt="" />
-			</div>
-		</footer>
+			</footer>
+		</div>
 	</body>
 </html>
