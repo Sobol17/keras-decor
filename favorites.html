@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Keras Decor</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<a href="/">
+					<img class="header-logo" src="assets/logo.svg" alt="" />
+				</a>
+				<nav class="header-nav">
+					<button class="header-nav__button">
+						<i>
+							<svg
+								width="34"
+								height="11"
+								viewBox="0 0 34 11"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M27.333 9.44189H6.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M32.333 1.55811H1.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</i>
+						<span>Каталог</span>
+					</button>
+					<a class="header-nav__link" href="/">О нас</a>
+					<a class="header-nav__link" href="/">Доставка и оплата</a>
+					<a class="header-nav__link" href="/">Блог</a>
+					<a class="header-nav__link" href="/">Дизайнерам</a>
+					<a class="header-nav__link" href="/">Контакты</a>
+				</nav>
+				<div class="header-controls">
+					<a class="header-nav__link header-phone" href="mailto:83952333940"
+						>+7 (3952) 33-39-40</a
+					>
+					<div class="header-control">
+						<img src="assets/cart-icon.svg" alt="" />
+					</div>
+
+					<div class="header-control">
+						<img src="assets/like-icon.svg" alt="" />
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="top-banner cart-breadcrumbs">
+					<ul class="catalog-breadcrumbs">
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Главная</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Избранное</a>
+						</li>
+					</ul>
+				</section>
+
+				<div class="cart-wrapper">
+					<div class="cart">
+						<h1 class="cart-title">3 товара в списке желаний</h1>
+						<div class="cart-head favorites-head">
+							<span>Товар</span>
+							<span>Цена</span>
+						</div>
+
+						<div class="cart-item in-cart">
+							<div class="cart-item__delete">
+								<img src="assets/cart-item-del.svg" alt="" />
+							</div>
+							<div class="cart-item__img">
+								<img src="assets/bg1.png" alt="" />
+							</div>
+							<div class="cart-item__name">
+								Кварцевый ламинат Fargo Bevel 50-1603 Дуб Кантри
+							</div>
+							<div class="cart-item__price">
+								<span class="cart-item__price--mobile">Цена</span>
+								<span>4 276.48₽</span>
+							</div>
+							<div class="cart-item__count">
+								<button class="cart-item__count__btn cart-minus">-</button>
+								<input
+									class="cart-item__count__input"
+									type="number"
+									name="counter"
+									value="5"
+								/>
+								<button class="cart-item__count__btn cart-plus">+</button>
+							</div>
+							<div class="cart-item__summ">
+								<span class="cart-item__summ--mobile">Стоимость</span>
+								<span>4 276.48₽</span>
+							</div>
+							<button class="my-button cart-item__button">В корзину</button>
+						</div>
+
+						<div class="cart-item">
+							<div class="cart-item__delete">
+								<img src="assets/cart-item-del.svg" alt="" />
+							</div>
+							<div class="cart-item__img">
+								<img src="assets/bg1.png" alt="" />
+							</div>
+							<div class="cart-item__name">
+								Кварцевый ламинат Fargo Bevel 50-1603 Дуб Кантри
+							</div>
+							<div class="cart-item__price">
+								<span class="cart-item__price--mobile">Цена</span>
+								<span>4 276.48₽</span>
+							</div>
+							<div class="cart-item__count">
+								<button class="cart-item__count__btn cart-minus">-</button>
+								<input
+									class="cart-item__count__input"
+									type="number"
+									name="counter"
+									value="5"
+								/>
+								<button class="cart-item__count__btn cart-plus">+</button>
+							</div>
+							<div class="cart-item__summ">
+								<span class="cart-item__summ--mobile">Стоимость</span>
+								<span>4 276.48₽</span>
+							</div>
+							<button class="my-button cart-item__button">В корзину</button>
+						</div>
+					</div>
+
+					<div class="cart-info favorites-info">
+						<img class="cart-info__img" src="assets/wishlist.svg" alt="" />
+						<div class="cart-info__title">
+							<p>
+								Ваши любимые <br />
+								товары под рукой
+							</p>
+						</div>
+						<div class="cart-info__text">
+							<p>
+								Добавляйте товары в избранное, чтобы сохранить их для быстрого
+								доступа. Нашли то, что хотите приобрести?
+							</p>
+							<p class="cart-info__text--bold">
+								Просто нажмите «В корзину» и укажите количество –мы позаботимся
+								о вашем удобстве.
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="cart-empty hide">
+					<img src="assets/cart-empty.svg" alt="" />
+					<h1 class="cart-title">Избранное</h1>
+					<p class="cart-empty__text cart-empty__text--bold">
+						Ваш список избранного пуст :(
+					</p>
+					<p class="cart-empty__text">
+						Вы еще ничего не положили в избранное. Давайте это исправим, перейти
+						в каталог
+					</p>
+					<a href="/catalog">
+						<button class="my-button cart-empty__btn">Перейти в каталог</button>
+					</a>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="flex-col">
+					<div class="footer-logo">
+						<img src="assets/logo.svg" />
+					</div>
+					<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
+					<div class="footer-phone__note">Заказать звонок</div>
+					<div class="footer-address">
+						г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
+						Рабочие дни : пн. — вс. с 10.00 до 20.00
+					</div>
+					<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
+						>KerasDecore@mail.ru</a
+					>
+					<div class="footer-links">
+						<img src="assets/telegramm.svg" alt="" />
+						<img src="assets/vk.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="flex-col">
+					<div class="footer-title">Категории</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый паркет</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Плинтус</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Подложка</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Клей</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="flex-col">
+					<div class="footer-title">Информация</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Дизайнерам</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Контакты</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">О компании</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Доставка и оплата </a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Блог</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="flex-col">
+					<div class="footer-title">Магазин</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Каталог</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Политика конфеденциальности</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Карта сайта </a>
+						</li>
+					</ul>
+
+					<p class="footer-copyright">© Karas Decore, 2024-2025</p>
+				</div>
+
+				<div class="footer-logo--big">
+					<img src="assets/logo-big.svg" alt="" />
+				</div>
+			</footer>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

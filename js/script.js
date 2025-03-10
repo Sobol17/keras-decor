@@ -53,4 +53,25 @@ $(document).ready(function () {
 			$('.custom-select').removeClass('open')
 		}
 	})
+
+	// design circle
+
+	const images = $('.work-content__img img')
+	const steps = $('.work-step')
+
+	steps.on('click', function () {
+		const index = $(this).index()
+		images.addClass('hide')
+		images.eq(index).removeClass('hide')
+		steps.removeClass('active')
+		steps.eq(index).addClass('active')
+		if (window.innerWidth < 650) {
+			$('.steps').css('transform', `translateX(-50%) rotate(-${90 * index}deg)`)
+			if (index % 2 === 0) {
+				steps.css('transform', `translateX(-50%) rotate(-${90 * index}deg)`)
+			} else {
+				steps.css('transform', `translateY(-50%) rotate(-${90 * index}deg)`)
+			}
+		}
+	})
 })

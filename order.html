@@ -64,7 +64,126 @@
 				</div>
 			</header>
 
-			<main></main>
+			<main>
+				<section class="top-banner cart-breadcrumbs">
+					<ul class="catalog-breadcrumbs">
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Главная</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Корзина</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="">Оформление заказа</a>
+						</li>
+					</ul>
+				</section>
+
+				<div class="cart-wrapper">
+					<div class="order">
+						<h1 class="cart-title">Оформление заказа</h1>
+						<form action='' class="order-content">
+							<div class="input__wrapper fb-30">
+								<label class="input__label" for="name">Имя</label>
+								<input class="input" type="text" placeholder="Имя" id="name" />
+							</div>
+							<div class="input__wrapper fb-30">
+								<label class="input__label" for="secondName">Фамилия</label>
+								<input
+									class="input"
+									type="text"
+									placeholder="Фамилия"
+									id="secondName"
+								/>
+							</div>
+							<div class="input__wrapper fb-30">
+								<label class="input__label" for="lastName">Отчество</label>
+								<input
+									class="input"
+									type="text"
+									placeholder="Отчество"
+									id="lastName"
+								/>
+							</div>
+							<div class="input__wrapper fb-50">
+								<label class="input__label" for="email">E-mail</label>
+								<input
+									class="input"
+									type="text"
+									placeholder="E-mail"
+									id="email"
+								/>
+							</div>
+							<div class="input__wrapper fb-50">
+								<label class="input__label" for="phone">Номер телефона</label>
+								<input class="input" type="tel" placeholder="+7" id="phone" />
+							</div>
+							<div class="input__wrapper fb-100">
+								<label class="input__label" for="city">Населенный пункт</label>
+								<input
+									class="input"
+									type="tel"
+									placeholder="Иркутск"
+									id="city"
+								/>
+							</div>
+						</fo>
+					</div>
+
+					<div class="cart-info">
+						<div class="cart-info__title">
+							<span>Ваш заказ</span>
+							<span>13 003 ₽</span>
+						</div>
+						<div class="cart-info__line">
+							<span>Товары</span>
+							<span class="cart-info__text--bold">7 шт</span>
+						</div>
+						<div class="cart-info__line">
+							<span>Общая стоимость</span>
+							<span class="cart-info__text--bold">13 003 ₽</span>
+						</div>
+						<div class="cart-info__line">
+							<span>Доставка</span>
+							<span class="cart-info__text--sm"
+								>Точная стоимость и срок доставки <br />
+								указываются при оформлении услуги</span
+							>
+						</div>
+
+						<div class="custom-select">
+							<div class="selected-option">
+								<span>Оплата - наличными</span>
+								<span class="arrow"
+									><img src="assets/select-arrow.svg" alt=""
+								/></span>
+							</div>
+							<ul class="options">
+								<li data-value="1">Оплата - наличными</li>
+								<li data-value="2">Оплата - картой</li>
+							</ul>
+						</div>
+
+						<button class="my-button cart-info__btn">Отправить</button>
+						<a href="/cart" class="cart-info__link">Вернуться в корзину</a>
+					</div>
+				</div>
+
+				<div class="cart-empty hide">
+					<img src="assets/cart-empty.svg" alt="" />
+					<h1 class="cart-title">Корзина</h1>
+					<p class="cart-empty__text cart-empty__text--bold">
+						В вашем заказе пока ничего нет :(
+					</p>
+					<p class="cart-empty__text">
+						Для оформления заказа добавьте товар в корзину. Давайте начнем поиск
+						с нашего каталога
+					</p>
+					<a href="/">
+						<button class="my-button cart-empty__btn">Перейти в каталог</button>
+					</a>
+				</div>
+			</main>
 
 			<footer class="footer">
 				<div class="flex-col">
