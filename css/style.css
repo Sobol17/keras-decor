@@ -492,10 +492,18 @@ h2 {
 	text-wrap: nowrap;
 }
 
-.my-button:hover {
+.my-button:active {
 	transition: all 0.18s ease;
 	background-color: var(--black-color);
 	color: var(--white-color);
+}
+
+@media (hover: hover) {
+	.my-button:hover {
+		transition: all 0.18s ease;
+		background-color: var(--black-color);
+		color: var(--white-color);
+	}
 }
 
 /* reviews */
@@ -879,6 +887,7 @@ h2 {
 	font-weight: 500;
 	font-size: 18px;
 	margin-bottom: 40px;
+	line-height: 1.35;
 }
 
 .modal__inputs {
@@ -1962,6 +1971,7 @@ input::-webkit-inner-spin-button {
 }
 
 .work {
+	position: relative;
 	padding: 80px;
 	background-color: rgba(26, 25, 22, 1);
 	border-radius: 20px;
@@ -2652,11 +2662,43 @@ input::-webkit-inner-spin-button {
 		font-size: 14px;
 		font-weight: 400;
 	}
+
+	.benefits__content {
+		padding-left: 40px;
+	}
 }
 
 @media (max-width: 650px) {
+	.modal__title {
+		font-size: 32px;
+	}
+	.modal__subtitle {
+		font-size: 14px;
+	}
+	.modal__inputs {
+		flex-direction: column;
+		row-gap: 20px;
+	}
+	.modal__close {
+		top: 10px;
+		right: 10px;
+	}
+	.work-nav--mobile {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		display: flex;
+		align-items: center;
+		column-gap: 12px;
+		color: var(--white-color);
+	}
+	.benefits-flex {
+		flex-direction: column;
+		row-gap: 20px;
+	}
 	.work-step__content {
 		display: none;
+		transition: all 1s ease;
 	}
 
 	.work-content__img {

@@ -90,7 +90,9 @@
 							<li>Система бонусов</li>
 						</ul>
 					</div>
-					<button class="my-button">Отправить заявку</button>
+					<button class="my-button" data-modal-target="design-modal">
+						Отправить заявку
+					</button>
 				</section>
 
 				<section class="benefits">
@@ -255,6 +257,14 @@
 				</section>
 
 				<section class="work">
+					<div class="work-nav--mobile">
+						<button class="work-nav__prev">
+							<img src="assets/swiper-arrow-prev.svg" alt="" />
+						</button>
+						<button class="work-nav__next">
+							<img src="assets/swiper-arrow-next.svg" alt="" />
+						</button>
+					</div>
 					<h2 class="work-title">
 						Как начать <br />
 						работу с нами
@@ -476,6 +486,43 @@
 					<img src="assets/logo-big.svg" alt="logo" />
 				</div>
 			</footer>
+
+			<div class="modal-wrapper hide" data-modal="design-modal">
+				<div class="modal">
+					<div class="modal__close">
+						<img src="assets/close-fill.svg" alt="" />
+					</div>
+					<img class="modal__img" src="assets/modal-img.jpg" alt="" />
+					<h2 class="modal__title">
+						Станьте партнером и создавайте <br />уникальные проекты с нами
+					</h2>
+					<p class="modal__subtitle">
+						Заполните форму и наш менеджер свяжется с вами, чтобы обсудить
+						условия сотрудничества. Вдохновляйте, творите и развивайтесь вместе
+						с нашим салоном
+					</p>
+					<div class="modal__inputs">
+						<input
+							class="input input--gray"
+							type="text"
+							name="name"
+							placeholder="Имя"
+						/>
+						<input
+							class="input input--gray"
+							type="tel"
+							name="phone"
+							placeholder="+7"
+						/>
+					</div>
+					<div class="modal__button-wrapper">
+						<button class="my-button modal__button">Отправить</button>
+					</div>
+					<p class="modal__note">
+						Нажимая на кнопку, вы соглашаетесь с Политикой конфиденциальности
+					</p>
+				</div>
+			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 		<script src="js/script.js"></script>
