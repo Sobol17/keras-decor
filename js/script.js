@@ -147,4 +147,29 @@ $(document).ready(function () {
 			e.preventDefault()
 		}
 	})
+
+	// range slider
+	let initialMin = $('#range-slider').data('initial-min')
+	let initialMax = $('#range-slider').data('initial-max')
+
+	$('#range-slider').slider({
+		range: true,
+		min: initialMin,
+		max: initialMax,
+		values: ['1000', '9000'],
+		slide: function (event, ui) {
+			$('#min').val(ui.values[0])
+			$('#max').val(ui.values[1])
+		},
+		classes: {
+			'ui-slider': 'range-slider',
+			'ui-slider-handle': 'range-slider__handle',
+			'ui-slider-range': 'range-slider__range',
+		},
+	})
+
+	// dropdown
+	$('.sidebar-filter__title').on('click', function () {
+		$(this).parent().toggleClass('open')
+	})
 })

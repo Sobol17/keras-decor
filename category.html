@@ -6,150 +6,421 @@
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 		<link
 			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+			href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
 		/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>Keras Decor</title>
 	</head>
 	<body>
-		<header class="header">
-			<a href="/">
-				<img class="header-logo" src="assets/logo.svg" alt="" />
-			</a>
-			<nav class="header-nav">
-				<button class="header-nav__button">
-					<i>
-						<svg
-							width="34"
-							height="11"
-							viewBox="0 0 34 11"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M27.333 9.44189H6.33301"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
-							/>
-							<path
-								d="M32.333 1.55811H1.33301"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
-							/>
-						</svg>
-					</i>
-					<span>Каталог</span>
-				</button>
-				<a class="header-nav__link" href="/">О нас</a>
-				<a class="header-nav__link" href="/">Доставка и оплата</a>
-				<a class="header-nav__link" href="/">Блог</a>
-				<a class="header-nav__link" href="/">Дизайнерам</a>
-				<a class="header-nav__link" href="/">Контакты</a>
-			</nav>
-			<div class="header-controls">
-				<a class="header-nav__link header-phone" href="mailto:83952333940"
-					>+7 (3952) 33-39-40</a
-				>
-				<div class="header-control">
-					<img src="assets/cart-icon.svg" alt="" />
+		<div class="container">
+			<header class="header">
+				<a href="/">
+					<img class="header-logo" src="assets/logo.svg" alt="" />
+				</a>
+				<nav class="header-nav">
+					<button class="header-nav__button">
+						<i>
+							<svg
+								width="34"
+								height="11"
+								viewBox="0 0 34 11"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M27.333 9.44189H6.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M32.333 1.55811H1.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</i>
+						<span>Каталог</span>
+					</button>
+					<a class="header-nav__link" href="/">О нас</a>
+					<a class="header-nav__link" href="/">Доставка и оплата</a>
+					<a class="header-nav__link" href="/">Блог</a>
+					<a class="header-nav__link" href="/">Дизайнерам</a>
+					<a class="header-nav__link" href="/">Контакты</a>
+				</nav>
+				<div class="header-controls">
+					<a class="header-nav__link header-phone" href="mailto:83952333940"
+						>+7 (3952) 33-39-40</a
+					>
+					<div class="header-control">
+						<img src="assets/cart-icon.svg" alt="" />
+					</div>
+
+					<div class="header-control">
+						<img src="assets/like-icon.svg" alt="" />
+					</div>
+				</div>
+			</header>
+
+			<main>
+				<section class="top-banner">
+					<ul class="catalog-breadcrumbs">
+						<li>
+							<a class="catalog-breadcrumbs__link" href="/">Главная</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="/">Каталог</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="/">Категория</a>
+						</li>
+					</ul>
+					<img src="assets/about-top-banner.jpg" alt="Фото категории" />
+					<h1 class="top-banner__title">Название категории</h1>
+				</section>
+
+				<section class="catalog">
+					<aside class="sidebar">
+						<div class="sidebar-filter">
+							<div class="sidebar-filter__title">Розничная цена</div>
+							<div
+								id="range-slider"
+								data-initial-min="1000"
+								data-initial-max="9000"
+							></div>
+							<div class="range-slider__inputs">
+								<input class="input" type="number" id="min" value="1000" />
+								<span>—</span>
+								<input class="input" type="number" id="max" value="9000" />
+							</div>
+						</div>
+						<hr />
+						<div class="sidebar-filter">
+							<div class="sidebar-filter__title">
+								<span>Цвет</span>
+								<img
+									class="sidebar-filter__title__icon"
+									src="assets/filter-arrow.svg"
+									alt=""
+								/>
+							</div>
+
+							<div class="sidebar-filter__content">
+								<label class="checkbox" for="check1">
+									<input class="checkbox__input" type="checkbox" id="check1" />
+									<span class="checkbox__icon"></span>
+									<span>Черный1</span>
+								</label>
+								<label class="checkbox" for="check2">
+									<input class="checkbox__input" type="checkbox" id="check2" />
+									<span class="checkbox__icon"></span>
+									<span>Черный2</span>
+								</label>
+								<label class="checkbox" for="check3">
+									<input class="checkbox__input" type="checkbox" id="check3" />
+									<span class="checkbox__icon"></span>
+									<span>Черный3</span>
+								</label>
+								<label class="checkbox" for="check4">
+									<input class="checkbox__input" type="checkbox" id="check4" />
+									<span class="checkbox__icon"></span>
+									<span>Черный4</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+							</div>
+						</div>
+						<hr />
+						<div class="sidebar-filter">
+							<div class="sidebar-filter__title">
+								<span>Фильтр2</span>
+								<img
+									class="sidebar-filter__title__icon"
+									src="assets/filter-arrow.svg"
+									alt=""
+								/>
+							</div>
+
+							<div class="sidebar-filter__content">
+								<label class="checkbox" for="check1">
+									<input class="checkbox__input" type="checkbox" id="check1" />
+									<span class="checkbox__icon"></span>
+									<span>Черный1</span>
+								</label>
+								<label class="checkbox" for="check2">
+									<input class="checkbox__input" type="checkbox" id="check2" />
+									<span class="checkbox__icon"></span>
+									<span>Черный2</span>
+								</label>
+								<label class="checkbox" for="check3">
+									<input class="checkbox__input" type="checkbox" id="check3" />
+									<span class="checkbox__icon"></span>
+									<span>Черный3</span>
+								</label>
+								<label class="checkbox" for="check4">
+									<input class="checkbox__input" type="checkbox" id="check4" />
+									<span class="checkbox__icon"></span>
+									<span>Черный4</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+							</div>
+						</div>
+						<hr />
+						<div class="sidebar-filter">
+							<div class="sidebar-filter__title">
+								<span>Фильтр3</span>
+								<img
+									class="sidebar-filter__title__icon"
+									src="assets/filter-arrow.svg"
+									alt=""
+								/>
+							</div>
+
+							<div class="sidebar-filter__content">
+								<label class="checkbox" for="check1">
+									<input class="checkbox__input" type="checkbox" id="check1" />
+									<span class="checkbox__icon"></span>
+									<span>Черный1</span>
+								</label>
+								<label class="checkbox" for="check2">
+									<input class="checkbox__input" type="checkbox" id="check2" />
+									<span class="checkbox__icon"></span>
+									<span>Черный2</span>
+								</label>
+								<label class="checkbox" for="check3">
+									<input class="checkbox__input" type="checkbox" id="check3" />
+									<span class="checkbox__icon"></span>
+									<span>Черный3</span>
+								</label>
+								<label class="checkbox" for="check4">
+									<input class="checkbox__input" type="checkbox" id="check4" />
+									<span class="checkbox__icon"></span>
+									<span>Черный4</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+								<label class="checkbox" for="check5">
+									<input class="checkbox__input" type="checkbox" id="check5" />
+									<span class="checkbox__icon"></span>
+									<span>Черный5</span>
+								</label>
+							</div>
+						</div>
+						<hr />
+					</aside>
+					<div class="catalog-content">
+						<div class="catalog-content__head">
+							<h3 class="catalog-content__head__title">Фильтр</h3>
+							<div class="catalog-content__head__sort">
+								<button>
+									<img src="assets/catalog-icon1.svg" alt="" />
+								</button>
+								<button>
+									<img src="assets/catalog-icon2.svg" alt="" />
+								</button>
+								<div class="custom-select catalog-select">
+									<div class="selected-option">
+										<span>По популярности</span>
+										<span class="arrow"
+											><img src="assets/select-arrow.svg" alt=""
+										/></span>
+									</div>
+									<ul class="options">
+										<li data-value="1">По популярности</li>
+										<li data-value="2">Сначала дешевле</li>
+										<li data-value="3">Сначала дороже</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<ul class="catalog-list">
+							<li class="catalog-list__item">
+								<div class="card">
+									<div class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</div>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<div class="pagination">
+					<button class="my-button pagination-button">Показать еще</button>
+					<div class="pagination-container">
+						<ul class="pagination-nav">
+							<li class="pagination-nav__item pagination-nav__item--active">
+								1
+							</li>
+							<li class="pagination-nav__item">2</li>
+							<li class="pagination-nav__item">3</li>
+							<li class="pagination-nav__item">4</li>
+							<li class="pagination-nav__next">
+								<span>Дальше</span>
+								<img src="assets/arrow-pag-next.svg" alt="" />
+							</li>
+						</ul>
+						<p class="pagination-count">9 из 44</p>
+					</div>
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="flex-col">
+					<div class="footer-logo">
+						<img src="assets/logo.svg" />
+					</div>
+					<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
+					<div class="footer-phone__note">Заказать звонок</div>
+					<div class="footer-address">
+						г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
+						Рабочие дни : пн. — вс. с 10.00 до 20.00
+					</div>
+					<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
+						>KerasDecore@mail.ru</a
+					>
+					<div class="footer-links">
+						<img src="assets/telegramm.svg" alt="" />
+						<img src="assets/vk.svg" alt="" />
+					</div>
 				</div>
 
-				<div class="header-control">
-					<img src="assets/like-icon.svg" alt="" />
+				<div class="flex-col">
+					<div class="footer-title">Категории</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый паркет</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Плинтус</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Подложка</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Клей</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</header>
 
-		<main></main>
-
-		<footer class="footer">
-			<div class="flex-col">
-				<div class="footer-logo">
-					<img src="assets/logo.svg" />
+				<div class="flex-col">
+					<div class="footer-title">Информация</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Дизайнерам</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Контакты</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">О компании</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Доставка и оплата </a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Блог</a>
+						</li>
+					</ul>
 				</div>
-				<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
-				<div class="footer-phone__note">Заказать звонок</div>
-				<div class="footer-address">
-					г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
-					Рабочие дни : пн. — вс. с 10.00 до 20.00
+
+				<div class="flex-col">
+					<div class="footer-title">Магазин</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Каталог</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Политика конфеденциальности</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Карта сайта </a>
+						</li>
+					</ul>
+
+					<p class="footer-copyright">© Karas Decore, 2024-2025</p>
 				</div>
-				<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
-					>KerasDecore@mail.ru</a
-				>
-				<div class="footer-links">
-					<img src="assets/telegramm.svg" alt="" />
-					<img src="assets/vk.svg" alt="" />
+
+				<div class="footer-logo--big">
+					<img src="assets/logo-big.svg" alt="" />
 				</div>
-			</div>
+			</footer>
+		</div>
 
-			<div class="flex-col">
-				<div class="footer-title">Категории</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Кварцвиниловый паркет</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Плинтус</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Подложка</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Клей</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Информация</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Дизайнерам</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Контакты</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">О компании</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Доставка и оплата </a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Блог</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Магазин</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Каталог</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Политика конфеденциальности</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Пользовательское соглашение</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Карта сайта </a>
-					</li>
-				</ul>
-
-				<p class="footer-copyright">© Karas Decore, 2024-2025</p>
-			</div>
-
-			<div class="footer-logo--big">
-				<img src="assets/logo-big.svg" alt="" />
-			</div>
-		</footer>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

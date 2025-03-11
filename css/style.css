@@ -745,6 +745,7 @@ h2 {
 	font-weight: 600;
 	font-size: 16px;
 	margin-bottom: 40px;
+	line-height: 1.35;
 }
 
 .footer-mail {
@@ -2136,6 +2137,219 @@ input::-webkit-inner-spin-button {
 		url('../assets/design-form.jpg') no-repeat right / contain
 			var(--black-color);
 }
+
+.catalog {
+	display: flex;
+	column-gap: 40px;
+	-moz-column-gap: 40px;
+	margin-top: 80px;
+}
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	row-gap: 25px;
+	height: 100%;
+	max-width: 220px;
+	width: 100%;
+}
+
+.sidebar hr {
+	margin: 0;
+}
+
+.sidebar-filter__title {
+	font-family: 'Unbounded';
+	font-weight: 600;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	cursor: pointer;
+}
+
+.sidebar-filter__title__icon {
+	transform: rotate(180deg);
+	transition: transform 0.24s ease;
+}
+
+.catalog-content {
+	height: max-content;
+	width: 100%;
+}
+
+.range-slider {
+	margin: 25px 10px;
+	height: 4px !important;
+	background-color: #e8e8e8 !important;
+	border: none !important;
+	border-radius: 5px;
+}
+
+.range-slider__handle {
+	top: -8px !important;
+	width: 22px !important;
+	height: 22px !important;
+	border-radius: 100%;
+	background-color: var(--white-color) !important;
+	border: 6px solid var(--black-color) !important;
+}
+
+.range-slider__range {
+	height: 4px !important;
+	background: var(--black-color);
+}
+
+.range-slider__inputs {
+	border: 1px solid #373737;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 8px 0px;
+}
+
+.range-slider__inputs span {
+	color: var(--black-color);
+}
+
+.range-slider__inputs input {
+	text-align: center;
+	border-radius: 0;
+	width: 100%;
+	padding: 0;
+	border: none;
+	background-color: transparent;
+	color: var(--black-color);
+}
+
+.checkbox {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	font-size: 14px;
+	line-height: 120%;
+	user-select: none;
+}
+
+.checkbox__icon {
+	width: 20px;
+	height: 20px;
+	border: 1px solid #727378;
+	background-color: var(--white-color);
+	border-radius: 4px;
+	margin-right: 8px;
+	transition: background-color 0.2s ease;
+}
+
+.checkbox__input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.checkbox__input:checked + .checkbox__icon {
+	background-color: var(--black-color);
+	border: 1px solid var(--black-color);
+	background-image: url('../assets/check.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 12px;
+}
+
+.sidebar-filter__content {
+	margin-top: 0px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+	padding: 2px 0;
+	overflow: hidden;
+	height: 100%;
+	max-height: 0;
+	opacity: 0;
+	transition: opacity 0.2s ease, max-height 0.3s ease, margin-top 0.3s ease;
+}
+
+.sidebar-filter.open .sidebar-filter__content {
+	max-height: 210px;
+	margin-top: 25px;
+	overflow: auto;
+	opacity: 1;
+}
+
+.sidebar-filter.open .sidebar-filter__title__icon {
+	transform: rotate(0deg);
+}
+
+.sidebar-filter__content::-webkit-scrollbar-track {
+	border-radius: 15px;
+	background-color: #f5f5f5;
+}
+
+.sidebar-filter__content::-webkit-scrollbar {
+	border-radius: 15px;
+	background-color: #f0f0f0;
+	width: 4px;
+}
+
+.sidebar-filter__content::-webkit-scrollbar-thumb {
+	border-radius: 15px;
+	background-color: #bdbdbd;
+}
+
+.catalog-content__head {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.catalog-content__head__title {
+	font-family: 'Unbounded';
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.catalog-content__head__sort {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+}
+
+.catalog-content__head__sort button {
+	padding: 0;
+	margin: 0;
+}
+
+.catalog-select {
+	border: none;
+	border-radius: 0;
+}
+
+.catalog-select .selected-option {
+	column-gap: 8px;
+}
+
+.catalog-select .options {
+	bottom: auto;
+}
+
+.catalog-list {
+	display: grid;
+	gap: 40px;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	justify-content: center;
+	justify-items: center;
+}
+
+.catalog-list__item {
+	max-height: max-content;
+	max-width: 484px;
+	min-width: 162px;
+	width: 100%;
+}
+
+/* card */
 
 @media (max-width: 1440px) {
 	.header-nav {
