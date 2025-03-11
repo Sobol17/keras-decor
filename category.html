@@ -15,9 +15,14 @@
 	<body>
 		<div class="container">
 			<header class="header">
-				<a href="/">
-					<img class="header-logo" src="assets/logo.svg" alt="" />
-				</a>
+				<div class="header-burger__wrapper">
+					<button class="header-burger">
+						<img src="assets/burger-icon.svg" alt="" />
+					</button>
+					<a href="/">
+						<img class="header-logo" src="assets/logo.svg" alt="" />
+					</a>
+				</div>
 				<nav class="header-nav">
 					<button class="header-nav__button">
 						<i>
@@ -62,6 +67,71 @@
 						<img src="assets/like-icon.svg" alt="" />
 					</div>
 				</div>
+
+				<div class="mobile-burger">
+					<div class="mobile-burger__head">
+						<img class="header-logo" src="assets/logo.svg" alt="" />
+						<button class="mobile-burger__close">
+							<img src="assets/close-fill.svg" alt="" />
+						</button>
+					</div>
+					<ul class="mobile-burger__list">
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/burger-icon.svg" alt="" />
+								</i>
+								<span>Каталог</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>О нас</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Доставка и оплата</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Блог</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Дизайнерам</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Контакты</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/cart-icon.svg" alt="" />
+								</i>
+								<span>Корзина</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/like-icon.svg" alt="" />
+								</i>
+								<span>Корзина</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+73952333940" class="mobile-burger__link"
+								>+7 (3952) 33-39-40</a
+							>
+						</li>
+					</ul>
+				</div>
 			</header>
 
 			<main>
@@ -83,6 +153,13 @@
 
 				<section class="catalog">
 					<aside class="sidebar">
+						<div class="sidebar-head--mobile">
+							<button class="catalog-content__filter--mobile">
+								<img src="assets/catalog-filter.svg" alt="" />
+								Фильтры
+							</button>
+							<div class="sidebar-head__reset">Сбросить</div>
+						</div>
 						<div class="sidebar-filter">
 							<div class="sidebar-filter__title">Розничная цена</div>
 							<div
@@ -243,11 +320,16 @@
 								</label>
 							</div>
 						</div>
-						<hr />
+
+						<button class="my-button sidebar__button">Применить</button>
 					</aside>
 					<div class="catalog-content">
 						<div class="catalog-content__head">
 							<h3 class="catalog-content__head__title">Фильтр</h3>
+							<button class="catalog-content__filter--mobile">
+								<img src="assets/catalog-filter.svg" alt="" />
+								Фильтры
+							</button>
 							<div class="catalog-content__head__sort">
 								<button>
 									<img src="assets/catalog-icon1.svg" alt="" />
@@ -274,10 +356,10 @@
 						<ul class="catalog-list">
 							<li class="catalog-list__item">
 								<div class="card">
-									<div class="card-top">
+									<a href="/" class="card-top">
 										<div class="card-top__badge">Хит</div>
 										<button class="card-top__like">
-											<img src="assets/card-like.svg" alt="" />
+											<img src="assets/card/card-like.svg" alt="" />
 										</button>
 										<img class="card-top__img" src="assets/bg1.png" alt="" />
 										<div class="card-top__props">
@@ -286,7 +368,7 @@
 											/></span>
 											<span><img src="assets/card/card-hum.svg" alt="" /></span>
 										</div>
-									</div>
+									</a>
 
 									<a href="/" class="card-name">
 										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
@@ -297,7 +379,112 @@
 									<p class="card-text">Материал: SPC</p>
 									<p class="card-text">Фаска: V-образная фаска</p>
 									<div class="card-bottom">
-										<div class="card-price">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="catalog-list__item">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="catalog-list__item">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</li>
+							<li class="catalog-list__item">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
 											<p class="card-price--old">5 890.00 ₽ / м2</p>
 											<p class="card-price">2 890.00 ₽ / м2</p>
 										</div>

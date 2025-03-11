@@ -16,6 +16,57 @@ $(document).ready(function () {
 		})
 	}
 
+	if ($('.product-thumb-swiper').length !== 0) {
+		var productThumbsSwiper = new Swiper('.product-thumb-swiper', {
+			direction: 'horizontal',
+			spaceBetween: 10,
+			slidesPerView: 4,
+			freeMode: true,
+			watchSlidesProgress: true,
+			breakpoints: {
+				650: {
+					direction: 'vertical',
+				},
+			},
+		})
+		var productSwiper = new Swiper('.product-swiper', {
+			spaceBetween: 10,
+			slidesPerView: 1,
+			thumbs: {
+				swiper: productThumbsSwiper,
+			},
+		})
+	}
+
+	if ($('.product-upsales__swiper').length !== 0) {
+		const swiper = new Swiper('.product-upsales__swiper', {
+			slidesPerView: 2,
+			spaceBetween: 40,
+			loop: false,
+			navigation: {
+				nextEl: '.main-swiper-navigation__button--next',
+				prevEl: '.main-swiper-navigation__button--prev',
+			},
+			breakpoints: {
+				867: {
+					slidesPerView: 3,
+				},
+				1220: {
+					slidesPerView: 4,
+				},
+			},
+		})
+	}
+
+	// burger menu
+	$('.header-burger').on('click', function () {
+		$('.mobile-burger').addClass('open')
+	})
+
+	$('.mobile-burger__close').on('click', function () {
+		$('.mobile-burger').removeClass('open')
+	})
+
 	// Открытие модалки
 	$('[data-modal-target]').on('click', function () {
 		const targetModal = $(this).data('modal-target')
@@ -171,5 +222,9 @@ $(document).ready(function () {
 	// dropdown
 	$('.sidebar-filter__title').on('click', function () {
 		$(this).parent().toggleClass('open')
+	})
+
+	$('.catalog-content__filter--mobile').on('click', function () {
+		$('.sidebar').addClass('active')
 	})
 })

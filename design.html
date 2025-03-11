@@ -15,9 +15,14 @@
 	<body>
 		<div class="container">
 			<header class="header">
-				<a href="/">
-					<img class="header-logo" src="assets/logo.svg" alt="logo" />
-				</a>
+				<div class="header-burger__wrapper">
+					<button class="header-burger">
+						<img src="assets/burger-icon.svg" alt="" />
+					</button>
+					<a href="/">
+						<img class="header-logo" src="assets/logo.svg" alt="" />
+					</a>
+				</div>
 				<nav class="header-nav">
 					<button class="header-nav__button">
 						<i>
@@ -55,12 +60,77 @@
 						>+7 (3952) 33-39-40</a
 					>
 					<div class="header-control">
-						<img src="assets/cart-icon.svg" alt="cart" />
+						<img src="assets/cart-icon.svg" alt="" />
 					</div>
 
 					<div class="header-control">
-						<img src="assets/like-icon.svg" alt="favorites" />
+						<img src="assets/like-icon.svg" alt="" />
 					</div>
+				</div>
+
+				<div class="mobile-burger">
+					<div class="mobile-burger__head">
+						<img class="header-logo" src="assets/logo.svg" alt="" />
+						<button class="mobile-burger__close">
+							<img src="assets/close-fill.svg" alt="" />
+						</button>
+					</div>
+					<ul class="mobile-burger__list">
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/burger-icon.svg" alt="" />
+								</i>
+								<span>Каталог</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>О нас</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Доставка и оплата</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Блог</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Дизайнерам</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Контакты</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/cart-icon.svg" alt="" />
+								</i>
+								<span>Корзина</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/like-icon.svg" alt="" />
+								</i>
+								<span>Корзина</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+73952333940" class="mobile-burger__link"
+								>+7 (3952) 33-39-40</a
+							>
+						</li>
+					</ul>
 				</div>
 			</header>
 

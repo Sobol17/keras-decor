@@ -13,143 +13,623 @@
 		<title>Keras Decor</title>
 	</head>
 	<body>
-		<header class="header">
-			<a href="/">
-				<img class="header-logo" src="assets/logo.svg" alt="" />
-			</a>
-			<nav class="header-nav">
-				<button class="header-nav__button">
-					<i>
-						<svg
-							width="34"
-							height="11"
-							viewBox="0 0 34 11"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<path
-								d="M27.333 9.44189H6.33301"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
+		<div class="container">
+			<header class="header">
+				<div class="header-burger__wrapper">
+					<button class="header-burger">
+						<img src="assets/burger-icon.svg" alt="" />
+					</button>
+					<a href="/">
+						<img class="header-logo" src="assets/logo.svg" alt="" />
+					</a>
+				</div>
+				<nav class="header-nav">
+					<button class="header-nav__button">
+						<i>
+							<svg
+								width="34"
+								height="11"
+								viewBox="0 0 34 11"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<path
+									d="M27.333 9.44189H6.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+								<path
+									d="M32.333 1.55811H1.33301"
+									stroke="white"
+									stroke-width="2"
+									stroke-linecap="round"
+								/>
+							</svg>
+						</i>
+						<span>Каталог</span>
+					</button>
+					<a class="header-nav__link" href="/">О нас</a>
+					<a class="header-nav__link" href="/">Доставка и оплата</a>
+					<a class="header-nav__link" href="/">Блог</a>
+					<a class="header-nav__link" href="/">Дизайнерам</a>
+					<a class="header-nav__link" href="/">Контакты</a>
+				</nav>
+				<div class="header-controls">
+					<a class="header-nav__link header-phone" href="mailto:83952333940"
+						>+7 (3952) 33-39-40</a
+					>
+					<div class="header-control">
+						<img src="assets/cart-icon.svg" alt="" />
+					</div>
+
+					<div class="header-control">
+						<img src="assets/like-icon.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="mobile-burger">
+					<div class="mobile-burger__head">
+						<img class="header-logo" src="assets/logo.svg" alt="" />
+						<button class="mobile-burger__close">
+							<img src="assets/close-fill.svg" alt="" />
+						</button>
+					</div>
+					<ul class="mobile-burger__list">
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/burger-icon.svg" alt="" />
+								</i>
+								<span>Каталог</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>О нас</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Доставка и оплата</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Блог</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Дизайнерам</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<span>Контакты</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/cart-icon.svg" alt="" />
+								</i>
+								<span>Корзина</span>
+							</a>
+						</li>
+						<li>
+							<a href="/" class="mobile-burger__link">
+								<i class="mobile-burger__icon">
+									<img src="assets/like-icon.svg" alt="" />
+								</i>
+								<span>Корзина</span>
+							</a>
+						</li>
+						<li>
+							<a href="tel:+73952333940" class="mobile-burger__link"
+								>+7 (3952) 33-39-40</a
+							>
+						</li>
+					</ul>
+				</div>
+			</header>
+
+			<main>
+				<section class="top-banner">
+					<ul class="catalog-breadcrumbs">
+						<li>
+							<a class="catalog-breadcrumbs__link" href="/">Главная</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="/">Каталог</a>
+						</li>
+						<li>
+							<a class="catalog-breadcrumbs__link" href="/"
+								>Fargo Bevel 8 мм 42 класс с фаской</a
+							>
+						</li>
+					</ul>
+					<img src="assets/product-top-banner.png" alt="Фото категории" />
+					<h1 class="top-banner__title">Fargo Bevel 8 мм 42 класс с фаской</h1>
+				</section>
+
+				<section class="product">
+					<div class="product-photos">
+						<div class="thumbs">
+							<div thumbsSlider="" class="swiper product-thumb-swiper">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<img
+											class="product-thumb-swiper__thumb"
+											src="assets/bg1.png"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											class="product-thumb-swiper__thumb"
+											src="assets/bg1.png"
+										/>
+									</div>
+									<div class="swiper-slide">
+										<img
+											class="product-thumb-swiper__thumb"
+											src="assets/bg1.png"
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper product-swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<img class="product-swiper__img" src="assets/bg1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img class="product-swiper__img" src="assets/bg1.png" />
+								</div>
+								<div class="swiper-slide">
+									<img class="product-swiper__img" src="assets/bg1.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product-info">
+						<h1 class="product-name">
+							Кварцевый SPC ламинат Fargo Comfort 1166-02 Дуб Спелый Миндаль
+						</h1>
+						<div class="product-articul">Артикул: 20087</div>
+						<p class="product-price">2 890.00 ₽ / м2</p>
+						<div class="price-collect">
+							<span>Коллекция:</span>
+							<span class="price-collect__item active">Bevel</span>
+							<span class="price-collect__item">Comfort XXL</span>
+						</div>
+						<dl class="product-list">
+							<div class="product-list__item">
+								<dt class="product-list__item__key">Размеры</dt>
+								<dd class="product-list__item__value">195x1380 mm</dd>
+							</div>
+							<div class="product-list__item">
+								<dt class="product-list__item__key">
+									Необходимая площадь (м²)
+								</dt>
+								<dd class="product-list__item__value">
+									<input type="number" class="input input--mini" value="5" />
+								</dd>
+							</div>
+							<div class="product-list__item">
+								<dt class="product-list__item__key">Фактическая площадь</dt>
+								<dd class="product-list__item__value">5,35</dd>
+							</div>
+							<div class="product-list__item">
+								<dt class="product-list__item__key">Итоговая цена</dt>
+								<dd class="product-list__item__value">12 051.20 ₽</dd>
+							</div>
+						</dl>
+
+						<div class="product-measure">Упаковок</div>
+						<div class="product-controls">
+							<div class="product-controls__counter">
+								<div class="product-controls__count cart-item__count">
+									<button class="cart-item__count__btn cart-minus">-</button>
+									<input
+										class="cart-item__count__input"
+										type="number"
+										name="counter"
+										value="5"
+									/>
+									<button class="cart-item__count__btn cart-plus">+</button>
+								</div>
+								<button
+									class="my-button my-button--inversive product-controls__btn"
+								>
+									Добавить в корзину
+								</button>
+							</div>
+							<button class="product-controls__like">
+								<img src="assets/card/card-like.svg" alt="" />
+								<span>В избранное</span>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="product-content">
+					<div class="product-tabs">
+						<div class="product-tabs__flex">
+							<h3 class="product-tabs__item active">
+								Описание и характеристики
+							</h3>
+
+							<h3 class="product-tabs__item">Фотографии интерьера</h3>
+							<h3 class="product-tabs__item">Сертификаты и инструкции</h3>
+						</div>
+						<a href="/" class="product-tabs__link">
+							<img src="assets/download.svg" alt="" />
+							<span>Скачать 3D текстуру</span>
+						</a>
+					</div>
+
+					<div class="product-desc product-tabs__content">
+						<div class="product-desc__left">
+							<h4 class="product-desc__title">Описание</h4>
+							<p class="product-desc__text">
+								Нейтральный теплый дизайн Дуб Шанхай 965-01 кварцевого ламината
+								33 класса коллекции Fargo Comfort — решение, подходящее
+								практически под любой интерьер. Этот универсальный дизайн с
+								изображением натурального дуба гармонирует с разными стилями
+								благодаря своей нейтральности и натуральности оттенка. Кварцевый
+								ламинат Fargo — это простота укладки и комфорт в использовании.
+							</p>
+							<h4 class="product-desc__title">Характеристики</h4>
+							<dl class="product-list">
+								<div class="product-list__item product-desc__list__item">
+									<dt class="product-list__item__key">Длина</dt>
+									<dd class="product-list__item__value">400 мм</dd>
+								</div>
+								<div class="product-list__item product-desc__list__item">
+									<dt class="product-list__item__key">Для теплого пола</dt>
+									<dd class="product-list__item__value">Да</dd>
+								</div>
+								<div class="product-list__item product-desc__list__item">
+									<dt class="product-list__item__key">Фаска</dt>
+									<dd class="product-list__item__value">С 4-х сторон</dd>
+								</div>
+								<div class="product-list__item product-desc__list__item">
+									<dt class="product-list__item__key">Класс износостойкости</dt>
+									<dd class="product-list__item__value">42 класс</dd>
+								</div>
+							</dl>
+						</div>
+						<div class="product-desc__right">
+							<img
+								class="product-desc__img"
+								src="assets/product/product-properties.png"
+								alt=""
 							/>
-							<path
-								d="M32.333 1.55811H1.33301"
-								stroke="white"
-								stroke-width="2"
-								stroke-linecap="round"
+							<img
+								class="product-desc__img"
+								src="assets/product/product-example.png"
+								alt=""
 							/>
-						</svg>
-					</i>
-					<span>Каталог</span>
-				</button>
-				<a class="header-nav__link" href="/">О нас</a>
-				<a class="header-nav__link" href="/">Доставка и оплата</a>
-				<a class="header-nav__link" href="/">Блог</a>
-				<a class="header-nav__link" href="/">Дизайнерам</a>
-				<a class="header-nav__link" href="/">Контакты</a>
-			</nav>
-			<div class="header-controls">
-				<a class="header-nav__link header-phone" href="mailto:83952333940"
-					>+7 (3952) 33-39-40</a
-				>
-				<div class="header-control">
-					<img src="assets/cart-icon.svg" alt="" />
+							<div class="product-desc__block product-desc__block--first">
+								Выезд на примерку - привезем <br />
+								к вам плашки материала и каталог
+							</div>
+							<div class="product-desc__block product-desc__block--second">
+								Бесплатная консультация <br />
+								дизайнера прямо у нас в салоне
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="product-upsales">
+					<h2 class="product-upsales__title">С этим товаром покупают</h2>
+					<div class="swiper product-upsales__swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card">
+									<a href="/" class="card-top">
+										<div class="card-top__badge">Хит</div>
+										<button class="card-top__like">
+											<img src="assets/card/card-like.svg" alt="" />
+										</button>
+										<img class="card-top__img" src="assets/bg1.png" alt="" />
+										<div class="card-top__props">
+											<span
+												><img src="assets/card/card-drop.svg" alt=""
+											/></span>
+											<span><img src="assets/card/card-hum.svg" alt="" /></span>
+										</div>
+									</a>
+
+									<a href="/" class="card-name">
+										Кварцевый SPC ламинат Fargo Bevel 50-1603 Дуб Кантри
+									</a>
+									<p class="card-text">Артикул:20087</p>
+									<p class="card-text">Класс: 42 класс</p>
+									<p class="card-text">Толщина: 6 мм</p>
+									<p class="card-text">Материал: SPC</p>
+									<p class="card-text">Фаска: V-образная фаска</p>
+									<div class="card-bottom">
+										<div class="card-price__wrapper">
+											<p class="card-price--old">5 890.00 ₽ / м2</p>
+											<p class="card-price">2 890.00 ₽ / м2</p>
+										</div>
+										<button class="my-button card-bottom__btn">
+											В корзину
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="form-section payment-form-section">
+					<form class="main-form" action="/">
+						<div class="main-form__top">Заполните форму</div>
+						<h2 class="main-form__title">
+							Есть вопросы или <br />
+							нужна консультация?
+						</h2>
+						<p class="main-form__text">
+							Наш специалист с радостью поможет вам в подборе <br />
+							материалов и ответит на все возникшие вопросы
+						</p>
+						<div class="main-form__inputs">
+							<input
+								class="input input--gray"
+								type="text"
+								name="name"
+								placeholder="Имя"
+							/>
+							<input
+								class="input input--gray"
+								type="text"
+								name="phone"
+								placeholder="+7"
+							/>
+						</div>
+						<button class="my-button">Записаться на консультацию</button>
+						<div class="main-form__note">
+							Оставьте заявку на бесплатный расчет стоимости материалов
+						</div>
+					</form>
+				</section>
+			</main>
+
+			<footer class="footer">
+				<div class="flex-col">
+					<div class="footer-logo">
+						<img src="assets/logo.svg" />
+					</div>
+					<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
+					<div class="footer-phone__note">Заказать звонок</div>
+					<div class="footer-address">
+						г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
+						Рабочие дни : пн. — вс. с 10.00 до 20.00
+					</div>
+					<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
+						>KerasDecore@mail.ru</a
+					>
+					<div class="footer-links">
+						<img src="assets/telegramm.svg" alt="" />
+						<img src="assets/vk.svg" alt="" />
+					</div>
 				</div>
 
-				<div class="header-control">
-					<img src="assets/like-icon.svg" alt="" />
+				<div class="flex-col">
+					<div class="footer-title">Категории</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый паркет</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Плинтус</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Подложка</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Клей</a>
+						</li>
+					</ul>
 				</div>
-			</div>
-		</header>
 
-		<main></main>
-
-		<footer class="footer">
-			<div class="flex-col">
-				<div class="footer-logo">
-					<img src="assets/logo.svg" />
+				<div class="flex-col">
+					<div class="footer-title">Информация</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Дизайнерам</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Контакты</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">О компании</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Доставка и оплата </a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Блог</a>
+						</li>
+					</ul>
 				</div>
-				<a href="tel:84952663670" class="footer-phone">+7 (495) 266-36-70</a>
-				<div class="footer-phone__note">Заказать звонок</div>
-				<div class="footer-address">
-					г. Иркутск, ул. 2-я Бауманская, 9/23с3 <br />
-					Рабочие дни : пн. — вс. с 10.00 до 20.00
+
+				<div class="flex-col">
+					<div class="footer-title">Магазин</div>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-link" href="/">Каталог</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Политика конфеденциальности</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a class="footer-link" href="/">Карта сайта </a>
+						</li>
+					</ul>
+
+					<p class="footer-copyright">© Karas Decore, 2024-2025</p>
 				</div>
-				<a href="mailto:KerasDecore@mail.ru" class="footer-mail"
-					>KerasDecore@mail.ru</a
-				>
-				<div class="footer-links">
-					<img src="assets/telegramm.svg" alt="" />
-					<img src="assets/vk.svg" alt="" />
+
+				<div class="footer-logo--big">
+					<img src="assets/logo-big.svg" alt="" />
 				</div>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Категории</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Кварцвиниловый паркет</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Кварцвиниловый ламинат</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Плинтус</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Подложка</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Клей</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Информация</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Дизайнерам</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Контакты</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">О компании</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Доставка и оплата </a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Блог</a>
-					</li>
-				</ul>
-			</div>
-
-			<div class="flex-col">
-				<div class="footer-title">Магазин</div>
-				<ul class="footer-list">
-					<li>
-						<a class="footer-link" href="/">Каталог</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Политика конфеденциальности</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Пользовательское соглашение</a>
-					</li>
-					<li>
-						<a class="footer-link" href="/">Карта сайта </a>
-					</li>
-				</ul>
-
-				<p class="footer-copyright">© Karas Decore, 2024-2025</p>
-			</div>
-
-			<div class="footer-logo--big">
-				<img src="assets/logo-big.svg" alt="" />
-			</div>
-		</footer>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>
