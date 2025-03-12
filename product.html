@@ -10,6 +10,11 @@
 		/>
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 		<title>Keras Decor</title>
 	</head>
 	<body>
@@ -198,7 +203,7 @@
 							Кварцевый SPC ламинат Fargo Comfort 1166-02 Дуб Спелый Миндаль
 						</h1>
 						<div class="product-articul">Артикул: 20087</div>
-						<p class="product-price">2 890.00 ₽ / м2</p>
+						<p class="product-price" data-price="2890">2 890.00 ₽ / м2</p>
 						<div class="price-collect">
 							<span>Коллекция:</span>
 							<span class="price-collect__item active">Bevel</span>
@@ -207,23 +212,33 @@
 						<dl class="product-list">
 							<div class="product-list__item">
 								<dt class="product-list__item__key">Размеры</dt>
-								<dd class="product-list__item__value">195x1380 mm</dd>
+								<dd class="product-list__item__value" data-size="2.07">
+									0.195x1.38 mm
+								</dd>
 							</div>
 							<div class="product-list__item">
 								<dt class="product-list__item__key">
 									Необходимая площадь (м²)
 								</dt>
 								<dd class="product-list__item__value">
-									<input type="number" class="input input--mini" value="5" />
+									<input
+										id="area-input"
+										type="number"
+										class="input input--mini"
+										value="1"
+										max="9999"
+									/>
 								</dd>
 							</div>
 							<div class="product-list__item">
 								<dt class="product-list__item__key">Фактическая площадь</dt>
-								<dd class="product-list__item__value">5,35</dd>
+								<dd id="actual-area" class="product-list__item__value">5,35</dd>
 							</div>
 							<div class="product-list__item">
 								<dt class="product-list__item__key">Итоговая цена</dt>
-								<dd class="product-list__item__value">12 051.20 ₽</dd>
+								<dd id="total-sum" class="product-list__item__value">
+									12 051.20 ₽
+								</dd>
 							</div>
 						</dl>
 
@@ -257,12 +272,16 @@
 				<section class="product-content">
 					<div class="product-tabs">
 						<div class="product-tabs__flex">
-							<h3 class="product-tabs__item active">
+							<h3 data-tab="tab1" class="product-tabs__item active">
 								Описание и характеристики
 							</h3>
 
-							<h3 class="product-tabs__item">Фотографии интерьера</h3>
-							<h3 class="product-tabs__item">Сертификаты и инструкции</h3>
+							<h3 data-tab="tab2" class="product-tabs__item">
+								Фотографии интерьера
+							</h3>
+							<h3 data-tab="tab3" class="product-tabs__item">
+								Сертификаты и инструкции
+							</h3>
 						</div>
 						<a href="/" class="product-tabs__link">
 							<img src="assets/download.svg" alt="" />
@@ -270,7 +289,7 @@
 						</a>
 					</div>
 
-					<div class="product-desc product-tabs__content">
+					<div id="tab1" class="product-desc product-tabs__content active">
 						<div class="product-desc__left">
 							<h4 class="product-desc__title">Описание</h4>
 							<p class="product-desc__text">
@@ -307,11 +326,17 @@
 								src="assets/product/product-properties.png"
 								alt=""
 							/>
-							<img
-								class="product-desc__img"
-								src="assets/product/product-example.png"
-								alt=""
-							/>
+							<a
+								href="assets/product/product-example.png"
+								data-fancybox
+								data-caption="example"
+							>
+								<img
+									class="product-desc__img"
+									src="assets/product/product-example.png"
+									alt=""
+								/>
+							</a>
 							<div class="product-desc__block product-desc__block--first">
 								Выезд на примерку - привезем <br />
 								к вам плашки материала и каталог
@@ -320,6 +345,125 @@
 								Бесплатная консультация <br />
 								дизайнера прямо у нас в салоне
 							</div>
+						</div>
+					</div>
+					<div id="tab2" class="product-images product-tabs__content">
+						<div class="product-images__item">
+							<a
+								href="assets/bg1.png"
+								data-fancybox="gallery"
+								data-caption="Caption #1"
+							>
+								<img src="assets/bg1.png" alt="" />
+							</a>
+						</div>
+						<div class="product-images__item">
+							<a
+								href="assets/bg1.png"
+								data-fancybox="gallery"
+								data-caption="Caption #2"
+							>
+								<img src="assets/bg1.png" alt="" />
+							</a>
+						</div>
+						<div class="product-images__item">
+							<a
+								href="assets/bg1.png"
+								data-fancybox="gallery"
+								data-caption="Caption #3"
+							>
+								<img src="assets/bg1.png" alt="" />
+							</a>
+						</div>
+						<div class="product-images__item">
+							<a
+								href="assets/bg1.png"
+								data-fancybox="gallery"
+								data-caption="Caption #4"
+							>
+								<img src="assets/bg1.png" alt="" />
+							</a>
+						</div>
+					</div>
+					<div id="tab3" class="product-certificates product-tabs__content">
+						<div class="product-certificates__item">
+							<img src="assets/pdf-icon.svg" alt="" />
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								target="_blank"
+								class="product-certificates__item__name"
+								>Сертификат соответствия</a
+							>
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								class="product-tabs__link product-certificates__item__link"
+								download=""
+							>
+								<img src="assets/download.svg" alt="" />
+								<span>Скачать</span>
+							</a>
+						</div>
+
+						<div class="product-certificates__item">
+							<img src="assets/pdf-icon.svg" alt="" />
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								target="_blank"
+								class="product-certificates__item__name"
+								>Сертификат соответствия</a
+							>
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								class="product-tabs__link product-certificates__item__link"
+								download=""
+							>
+								<img src="assets/download.svg" alt="" />
+								<span>Скачать</span>
+							</a>
+						</div>
+
+						<div class="product-certificates__item">
+							<img src="assets/pdf-icon.svg" alt="" />
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								target="_blank"
+								class="product-certificates__item__name"
+								>Сертификат соответствия</a
+							>
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								class="product-tabs__link product-certificates__item__link"
+								download=""
+							>
+								<img src="assets/download.svg" alt="" />
+								<span>Скачать</span>
+							</a>
+						</div>
+
+						<div class="product-certificates__item">
+							<img src="assets/pdf-icon.svg" alt="" />
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								target="_blank"
+								class="product-certificates__item__name"
+								>Сертификат соответствия</a
+							>
+							<!-- вставить ссылку на док -->
+							<a
+								href="/"
+								class="product-tabs__link product-certificates__item__link"
+								download=""
+							>
+								<img src="assets/download.svg" alt="" />
+								<span>Скачать</span>
+							</a>
 						</div>
 					</div>
 				</section>
